@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <title>Sistema de Amortizações Constantes (SAC)</title>
+
+    <script src="script.js"></script>
   </head>
   <body>
     <main>
@@ -25,22 +27,32 @@
                 name="starter_value"
                 id="starter_value"
                 type="number"
-                value="200000"
+                placeholder="Ex.: 200000"
               />
             </div>
             <div class="table-input">
               <label for="">Prazo (anos)</label>
               <br />
-              <input name="years" id="years" type="number" value="20" />
+              <input name="years" id="years" type="number" placeholder="Ex.: 20" />
             </div>
             <div class="table-input">
               <label for="interest">Juros ao ano</label>
               <br />
-              <input name="interest" id="interest" type="number" value="0.08" />
+              <input name="interest" id="interest" type="number" placeholder="Ex.: 0.08" />
             </div>
           </div>
           <br />
-          <input class="btn-simular" type="button" value="Simular" />
+          <button class="btn-simular" onclick="compute()" type="button">
+            Simular
+          </button>
+          <!-- Optional: using input do submit instead of button
+          <input
+            class="btn-simular"
+            type="button"
+            value="Simular"
+            onclick="compute()"
+          />
+          -->
         </form>
       </div>
       <br /><br />
@@ -53,7 +65,7 @@
             <div class="table-input">
               <label for="deadline">Prazo (meses)</label>
               <br />
-              <input name="deadline" id="deadline" readonly value="240" />
+              <input name="deadline" id="deadline" readonly placeholder=" - - - - - " />
             </div>
             <div class="table-input">
               <label for="montlhy_interest">Juros ao mês</label>
@@ -62,7 +74,7 @@
                 name="montlhy_interest"
                 id="montlhy_interest"
                 readonly
-                value="0.006434030110003"
+                value=" - - - - - "
               />
             </div>
             <div class="table-input">
@@ -72,7 +84,7 @@
                 name="interest_amount"
                 id="interest_amount"
                 readonly
-                value="155060.13"
+                placeholder=" - - - - - "
               />
             </div>
           </div>
@@ -80,43 +92,13 @@
         </form>
       </div>
 
-      <!-- Table -->
+      <!-- Table showing only the first five months -->
       <table>
         <tr>
           <th>Prestação</th>
           <th>Amortização</th>
           <th>Juros</th>
           <th>Total</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>833.33</td>
-            <td>1286.81</td>
-            <td>2120.14</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>833.33</td>
-            <td>1286.81</td>
-            <td>2120.14</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>833.33</td>
-            <td>1286.81</td>
-            <td>2120.14</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>833.33</td>
-            <td>1286.81</td>
-            <td>2120.14</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>833.33</td>
-            <td>1286.81</td>
-            <td>2120.14</td>
         </tr>
       </table>
     </main>
