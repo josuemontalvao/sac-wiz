@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <title>Sistema de Amortizações Constantes (SAC)</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Sistema de Amortizações Constantes (SAC)</title>
+  </head>
+  <body>
+    <main>
+      <!-- Input -->
+      <div>
+        <h1>Simulação de financiamento</h1>
+        <form>
+          <div class="entry-row">
+            <div class="table-input">
+              <label for="starter_value">Valor</label>
+              <br />
+              <input
+                name="starter_value"
+                id="starter_value"
+                type="number"
+                value="200000"
+              />
+            </div>
+            <div class="table-input">
+              <label for="">Prazo (anos)</label>
+              <br />
+              <input name="years" id="years" type="number" value="20" />
+            </div>
+            <div class="table-input">
+              <label for="interest">Juros ao ano</label>
+              <br />
+              <input name="interest" id="interest" type="number" value="0.08" />
+            </div>
+          </div>
+          <br />
+          <input class="btn-simular" type="button" value="Simular" />
+        </form>
+      </div>
+      <br /><br />
+
+      <!-- Output -->
+      <div>
+        <h1>Resultado</h1>
+        <form>
+          <div class="entry-row">
+            <div class="table-input">
+              <label for="deadline">Prazo (meses)</label>
+              <br />
+              <input name="deadline" id="deadline" readonly value="240" />
+            </div>
+            <div class="table-input">
+              <label for="montlhy_interest">Juros ao mês</label>
+              <br />
+              <input
+                name="montlhy_interest"
+                id="montlhy_interest"
+                readonly
+                value="0.006434030110003"
+              />
+            </div>
+            <div class="table-input">
+              <label for="interest_amount">Juros acumulados</label>
+              <br />
+              <input
+                name="interest_amount"
+                id="interest_amount"
+                readonly
+                value="155060.13"
+              />
+            </div>
+          </div>
+          <br />
+        </form>
+      </div>
+
+      <!-- Table -->
+      <table>
+        <tr>
+          <th>Prestação</th>
+          <th>Amortização</th>
+          <th>Juros</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+        </tr>
+      </table>
+    </main>
+  </body>
 </html>

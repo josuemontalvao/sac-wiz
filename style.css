@@ -1,0 +1,53 @@
+/* Native Elements */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(48, 167, 157);
+}
+
+main {
+  width: 60%;
+  margin-top: 20px;
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 20px 50px 35px 50px;
+  border-radius: 15px;
+}
+
+h1 {
+  color: rgb(21, 105, 98);
+}
+
+th {
+  color: rgb(21, 105, 98);
+  font-size: 1.3em;
+}
+
+th ~ th {
+  padding-left: 20px;
+}
+
+td ~ td {
+  text-align: right;
+  padding-left: 20px;
+}
+
+/* Classes */
+.entry-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-input {
+  font-size: 1.3em;
+}
+
+input {
+  font-size: 18px;
+}
+
+.btn-simular {
+  font-size: 22px;
+}
